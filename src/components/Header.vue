@@ -3,17 +3,31 @@
         <div class="logo-text">
             <p>jeremi<span class="type1">dée</span><span class="type2">dea</span><span class="type3">design</span></p>
         </div>
-        <div class="logo-img">
+        <router-link to="/" class="logo-img">
             <div class="logo"></div>
-        </div>
-        <div class="nav">
-            <router-link to="/">home</router-link>
-            <router-link to="/about">about</router-link>
-            <router-link to="/works">works</router-link>
+        </router-link>
+        <div class="nav" :class="{active: navIsActive}" ref="nav">
+            <router-link to="/" @click.native="navIsActive = false">works</router-link>
+            <router-link to="/about" @click.native="navIsActive = false">about</router-link>
             <a href="#">resume</a>
+        </div>
+        <div class="burger" :class="{cross: navIsActive}" @click="navIsActive = !navIsActive">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            navIsActive:false
+        }
+    },
+}
+</script>
+
 
 <style lang="scss" scoped>
 
@@ -65,8 +79,9 @@ header {
     width: 100%;
     align-content: center;
     padding: 3%;
-
+    background-color: #fff;
     .logo-text {
+        align-self: center;
         p {
             text-align: left;
             font-weight: 700;
@@ -98,7 +113,9 @@ header {
             }
         }
     }
-
+    .logo-img {
+        display: block;
+    }
     .logo {
         width: 50px;
         height: 50px;
@@ -124,12 +141,12 @@ header {
             margin: 0 10px;
             color: #3A3A3A;
             position: relative;
-
+            
             &:last-child {
                 margin-right: 0;
             }
 
-            &.router-link-exact-active {
+            &.router-link-exact-active{
                 &:before {
                     position: absolute;
                     content: '';
@@ -143,5 +160,104 @@ header {
             }
         }
     }
+    .burger {
+        justify-self: end;
+        align-self: center;
+        display: none;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin-right: 10px;
+        span {
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #2a2a2a;
+            position: absolute;
+            left: 10px;
+            transition: .3s;
+            &:first-child {
+                top: 5px;
+            }
+            &:nth-child(2){
+                top: 13px;
+            }
+            &:nth-child(3){
+                opacity: 1;
+                top: 22px;
+            }
+        }
+        &.cross {
+            span {
+                transition: .3s;
+                &:first-child {
+                    top: 13px;
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2){
+                    // top: 5px;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+    }
 }
+
+@media all and (max-width: 768px){
+    header {
+        position: relative;
+
+        .logo-text {
+            margin-left: 10px;
+            p {
+                font-size: 1.5rem;
+                span {
+                    left: 61px;
+                }
+            }
+        }
+        
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            bottom: 0%;
+            opacity: 0;
+            right: 0;
+            z-index: -1;
+            background-color: #fff;
+            width: 100vw;
+            display: block;
+            margin-top: calc(22px + 50px);
+            transition: all .3s;
+            a {
+                width: 100px;
+                display: block;
+                text-align: center;
+                margin:30px auto;
+                font-size: 2rem;
+                &:last-child {
+                margin-right: auto;
+            }
+            }
+            &.active {
+                // bottom: calc((7vh + 50px) * (-1));
+                left: 0;
+                
+                opacity: 1;
+                z-index: 9999;
+                transition: all .3s;
+
+            }
+        }
+        .burger {
+            display: block;
+        }
+    }    
+}
+
+
 </style>

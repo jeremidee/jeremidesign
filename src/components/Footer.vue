@@ -1,26 +1,26 @@
 <template>
   <footer>
-    <p class="name">Jeremy Huang</p>
-    <p class="title">An Interaction / Front-End <span>Designer</span></p>
+    <!-- <p class="name">Jeremy Huang</p>
+    <p class="title">An UI / Front-End <span>Designer</span></p> -->
     <div class="footer-middle">
       <ul>
         <li>
-          <a href="#" class="icon">
+          <a href="https://www.linkedin.com/in/jeremidesign/" class="icon">
             <img src="../assets/linkedin.svg" alt="linkedin">
           </a>
         </li>
         <li>
-          <a href="#" class="icon">
+          <a href="mailto:jeremidee@gmail.com" class="icon">
             <img src="../assets/mail.svg" alt="linkedin">
           </a>
         </li>
         <li>
-          <a href="#" class="icon">
-            <img src="../assets/fb.svg" alt="linkedin">
+          <a href="http://facebook.com/jeremidee" class="icon">
+            <img src="../assets/fb.svg" alt="facebook">
           </a>
         </li>
       </ul>
-      <p class="copyright">© 2019 jeremidesign</p>
+      <p class="copyright">© 2019 jeremidesign<br>handmade by Vue.js</p>
     </div>
   </footer>
 </template>
@@ -34,18 +34,18 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   footer {
     padding:0 3% 15px;
-    position: absolute;
+    // position: fixed;
+    background-color: #fff;
     bottom: 0;
     width: 100%;
     > p {
       text-align: right;
       font-size: 1.5rem;
       margin-bottom: 10px;
-      font-style: italic;
+      // font-style: italic;
       letter-spacing: -1px;
     }
 

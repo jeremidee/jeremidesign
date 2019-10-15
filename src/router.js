@@ -27,7 +27,47 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Works.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Works.vue'),
+      // children:[
+        
+      // ]
+    },
+    {
+      path:'/works/lesenphants',
+      name:'lesenphants',
+      component: () => import(/* webpackChunkName: "about" */ './views/works/Lesenphants.vue'),
+      works: 'lesenphants',
+      // beforeEnter: (to, from, next) => {
+      //   console.log('lesenphants beforeEnter');
+      // }
+    },
+    {
+      path:'/works/politics',
+      name:'politics',
+      component: () => import(/* webpackChunkName: "about" */ './views/works/politics.vue'),
+      works: 'politics',
+    },
+    {
+      path:'/works/mobileFirst',
+      name:'mobileFirst',
+      component: () => import(/* webpackChunkName: "about" */ './views/works/mobileFirst.vue'),
+      works: 'mobileFirst'
+    },
+    {
+      path:'/works/banking',
+      name:'banking',
+      component: () => import(/* webpackChunkName: "about" */ './views/works/banking.vue'),
+      works: 'banking'
+    },
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
     }
-  ]
-})
+  }
+});
+
+
+

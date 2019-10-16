@@ -20,7 +20,7 @@
           </a>
         </li>
       </ul>
-      <p class="copyright">© 2019 jeremidesign<br>handmade by Vue.js</p>
+      <p class="copyright">© 2019 jeremidesign<br>handmade with Vue.js</p>
     </div>
   </footer>
 </template>

@@ -66,6 +66,7 @@ html,body {
     // min-height: calc(100vh - (6vh + 50px) - 140px);
     position: relative;
     margin: 30px 0;
+    margin-top: 110px;
     .title {
      
       h1 {

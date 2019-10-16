@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header ref="header">
         <div class="logo-text">
             <p>jeremi<span class="type1">dée</span><span class="type2">dea</span><span class="type3">design</span></p>
         </div>
@@ -25,6 +25,23 @@ export default {
             navIsActive:false
         }
     },
+    methods: {
+        handleScroll() { 
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+            const header =  this.$refs['header'];
+            const headerHeight = header.offsetHeight;
+            if (scrollTop <= headerHeight) {
+                header.classList.remove('scroll');
+            } else {
+                header.classList.add('scroll') 
+            }
+        },
+
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    
 }
 </script>
 
@@ -78,8 +95,18 @@ header {
     grid-template-columns: 40% 20% 40%;
     width: 100%;
     align-content: center;
-    padding: 3%;
-    background-color: #fff;
+    padding: 15px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: .3s;    
+    &.scroll {
+        background-color: #fff;    
+        z-index: 999;
+        transition: .3s;
+        box-shadow: 0 4px 10px 0 rgba(100, 100, 100, 0.1);
+    }
     .logo-text {
         align-self: center;
         p {
@@ -208,7 +235,7 @@ header {
 
 @media all and (max-width: 768px){
     header {
-        position: relative;
+        // position: relative;
 
         .logo-text {
             margin-left: 10px;

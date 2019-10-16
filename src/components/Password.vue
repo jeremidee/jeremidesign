@@ -8,8 +8,8 @@
                     <div class="error" v-if="!check">Oops! wrong password, please try again!</div>
                 </div>
                 <div class="btn-grp">
-                    <button class="cancel" @click="$emit('close')">CLOSE</button>
-                    <button class="submit" @click="checkPsw">CONFIRM</button>
+                    <div class="cancel" @click="$emit('close')">CLOSE</div>
+                    <div class="submit" @click="checkPsw">CONFIRM</div>
                 </div>
             </div>
         </div>
@@ -84,6 +84,7 @@ export default {
                     transition: .2s;
                     display: block;
                     margin: auto;
+                    border-radius: 0;
                     &:focus {
                         outline: none;
                         box-shadow: none;
@@ -102,20 +103,20 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                button {
-                    all: unset;
+                div {
+                    
                     display: block;
                     margin: 0 10px;
                     padding: 8px 24px;
                     font-size: 18px;
                     text-align: center;
                     background-color: #308BF4;
-                    color:#fff;
+                    color:#fff !important;
                     border-radius: 5px;
                     transition: .2s;
                     cursor: pointer;
                     &.cancel {
-                        color:#308BF4;
+                        color:#308BF4 !important;
                         background-color:#fff ;
                         border:1px solid #308BF4;
                         &:hover {

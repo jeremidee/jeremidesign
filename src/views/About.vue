@@ -13,15 +13,15 @@
         <p>"Always forward, forward always." -pop, the Luke Cage</p>
         <div class="contact-block">
           <p>feel free to connect me with</p>
-          <a href="" class="icon-link">
+          <a href="https://www.linkedin.com/in/jeremidesign/" class="icon-link">
             <img src="../assets/linkedin.svg" alt="">
             <span>LikedIn</span>
           </a>
-          <a href="" class="icon-link">
+          <a href="mailto:jeremidee@gmail.com" class="icon-link">
             <img src="../assets/mail.svg" alt="">
             <span>Email</span>
           </a>
-          <a href="" class="icon-link">
+          <a href="http://facebook.com/jeremidee" class="icon-link">
             <img src="../assets/fb.svg" alt="">
             <span>Facebook</span>
           </a>

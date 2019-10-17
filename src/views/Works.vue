@@ -9,45 +9,32 @@
         <p class="item-text">A side project that working with colleagues inside the IBM Hackthon.</p>
         <div class="item-info">
           <div class="case-status">
-          <img src="../assets/unlock.svg" alt="" class="lock locked">
-          <span>open</span>
-        </div>
-        <div class="tag"> <span>UIUX/FE</span> </div>
+            <img src="../assets/unlock.svg" alt="" class="lock locked">
+            <span>open</span>
+          </div>
+          <div class="tag"> <span>UIUX/FE</span> </div>
         </div>
       </router-link>
+
       <div class="item" @click="checkPassword('lesenphants')">
         <img src="../assets/Artboard1.jpg" class="item-img" alt="">
         <h3 class="item-title">Les enphants</h3>
         <span class="item-time">2019</span>
-        <p class="item-text">A side project that working with colleagues inside the IBM Hackthon.</p>
+        <p class="item-text">A LINE-based web application for the largest baby-care products company in Taiwan.</p>
         <div class="item-info">
-        <div class="case-status">
-          <img src="../assets/locked.svg" alt="" class="lock locked">
-          <span>password needed</span>
-        </div>
-        <div class="tag"> <span>UI/FE</span> </div>
-        </div>
-      </div>
-      <div class="item" @click="checkPassword('mobileFirst')">
-        <img src="../assets/case3-1.png" class="item-img" alt="">
-        <h3 class="item-title">Mobile First</h3>
-        <span class="item-time">2018</span>
-        <p class="item-text">A side project that working with colleagues inside the IBM Hackthon.</p>
-
-      <div class="item-info">
           <div class="case-status">
             <img src="../assets/locked.svg" alt="" class="lock locked">
             <span>password needed</span>
           </div>
           <div class="tag"> <span>UI/FE</span> </div>
+        </div>
       </div>
-      
-      </div>
+
       <div class="item" @click="checkPassword('banking')">
         <img src="../assets/case4-1.jpg" class="item-img" alt="">
         <h3 class="item-title">Banking Projects</h3>
         <span class="item-time">2018-2019</span>
-        <p class="item-text">A side project that working with colleagues inside the IBM Hackthon.</p>
+        <p class="item-text">Internet/Mobile banking app design project.</p>
         <div class="item-info">
           <div class="case-status">
             <img src="../assets/locked.svg" alt="" class="lock locked">
@@ -56,8 +43,24 @@
           <div class="tag"> <span>UI/FE</span> </div>
         </div>
       </div>
+
+      <div class="item" @click="checkPassword('mobileFirst')">
+        <img src="../assets/case3-1.png" class="item-img" alt="">
+        <h3 class="item-title">Mobile First</h3>
+        <span class="item-time">2018</span>
+        <p class="item-text">A small UI project of IBM app management systems.</p>
+        <div class="item-info">
+          <div class="case-status">
+            <img src="../assets/locked.svg" alt="" class="lock locked">
+            <span>password needed</span>
+          </div>
+          <div class="tag"> <span>UI/FE</span> </div>
+        </div>
+      </div>
+
     </div>
-    <app-password v-if="showModal" :class="{active:showModal}" :case-password="casePassword" :case-name="toCase" @close="showModal = false"></app-password>
+    <app-password v-if="showModal" :class="{active:showModal}" :case-password="casePassword" :case-name="toCase"
+      @close="showModal = false"></app-password>
   </div>
   
 </template>

@@ -9,7 +9,7 @@
         <div class="nav" :class="{active: navIsActive}" ref="nav">
             <router-link to="/" @click.native="navIsActive = false">works</router-link>
             <router-link to="/about" @click.native="navIsActive = false">about</router-link>
-            <a href="#">resume</a>
+            <a href="../assets/Jiun-Shi_Huang(Jeremy)_CV.pdf">resume</a>
         </div>
         <div class="burger" :class="{cross: navIsActive}" @click="navIsActive = !navIsActive">
             <span></span>

@@ -6,10 +6,10 @@
       <img src="../assets/aboutme.jpg" alt="about me">
       <div class="quote">
         <p>I'm a UI designer/Front-end developer who lives in London.</p>
-        <p>With all my heart in design, I believe that all the products that we design is about user. And I am obsessed with solving user's problems by using design and coding.</p>
-        <p>I have developed an interdisciplinary skillset and bring strong interaction design, problem solving and product strategy skills, allowing me to design solutions in a holistic way.</p>
-        <p>and...wait!</p>
-        <p>I am a dog-person, basketball fan (yeah, Let's go mavs), playing bass guitar and love hip-hop music(u feel me? ) and my favorite line is:</p>        
+        <p>With all my heart in design, I believe that all the products that we design are about the user. And I am obsessed with solving user's problems by using design and coding.</p>
+        <p>I have developed an interdisciplinary skillset and bring robust interaction design, problem-solving, and product strategy skills, allowing me to design solutions in a holistic way.</p>
+        <p>And...wait!</p>
+        <p>I am a dog-person, basketball fan, playing bass guitar, and love digital gadgets. There is one sentence I always keep in mind is:</p>        
         <p>"Always forward, forward always." -pop, the Luke Cage</p>
         <div class="contact-block">
           <p>feel free to connect me with</p>

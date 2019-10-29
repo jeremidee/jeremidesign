@@ -59,6 +59,12 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/works/banking.vue'),
       works: 'banking'
     },
+    {
+      path:'/works/subs',
+      name:'subs',
+      component: () => import(/* webpackChunkName: "about" */ './views/works/subs.vue'),
+      works: 'subs'
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {

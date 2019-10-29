@@ -2,6 +2,19 @@
   <div class="works" id="works">
     <h1>works</h1>
     <div class="content">
+      <router-link to="/works/subs" class="item">
+        <img src="../assets/case5-2.png" class="item-img" alt="">
+        <h3 class="item-title">subscription manager</h3>
+        <span class="item-time">2019</span>
+        <p class="item-text">A side project </p>
+        <div class="item-info">
+          <div class="case-status">
+            <img src="../assets/unlock.svg" alt="" class="lock locked">
+            <span>open</span>
+          </div>
+          <div class="tag"> <span>UI</span> </div>
+        </div>
+      </router-link>
       <router-link to="/works/politics" class="item">
         <img src="../assets/case1.png" class="item-img" alt="">
         <h3 class="item-title">canpro</h3>

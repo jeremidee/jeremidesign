@@ -2,7 +2,7 @@
     <div class="case">
         <div class="case-container">
             <h1>/ Subscription Manager /</h1>
-            <p class="case-intro">An freelance project with the largest retailer of children’s wear and accessories in Taiwan.</p>
+            <p class="case-intro">Subs! is a subscription manager which can be arrange all your online subscriptions in one place.</p>
             <img src="../../assets/case5-1.png" class="wide" alt="">
             <!-- <p>Here is the Figma prototypes:</p>
             <div class="figma">

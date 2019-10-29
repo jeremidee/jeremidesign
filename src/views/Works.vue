@@ -6,7 +6,7 @@
         <img src="../assets/case5-2.png" class="item-img" alt="">
         <h3 class="item-title">subscription manager</h3>
         <span class="item-time">2019</span>
-        <p class="item-text">A side project </p>
+        <p class="item-text">A UI side project that can help people arrange your subscriptions.</p>
         <div class="item-info">
           <div class="case-status">
             <img src="../assets/unlock.svg" alt="" class="lock locked">

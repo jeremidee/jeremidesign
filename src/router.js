@@ -65,6 +65,12 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/works/subs.vue'),
       works: 'subs'
     },
+    {
+      path:'/works/webdesign',
+      name:'webdesign',
+      component: () => import(/* webpackChunkName: "about" */ './views/works/webdesign.vue'),
+      works: 'webdesign'
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {

@@ -108,6 +108,7 @@ html,body {
           width: 100%;
           margin: 50px 0;
         }
+       
         .gap {
           grid-column: 1/13 ;
           width: 100%;
@@ -128,7 +129,7 @@ html,body {
           font-family: 'Playfair Display', serif;
           font-weight: 700;
           text-align: left;
-          font-size: 1.6rem;
+          font-size: 2rem;
           margin: 40px 0;
         }
 
